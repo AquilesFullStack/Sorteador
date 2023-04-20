@@ -1,0 +1,62 @@
+@FontePrincipal: Roboto, sans-serif;
+@FonteTitulo: Lobster, cursive;
+@CorDoTexto: #fff;
+@CorDeFundo:#eb3b5a; 
+@CorButton: #f7b731;
+@CorDoTextoButton: #000;
+
+body{
+    background-color: @CorDeFundo;
+    font-family: @FontePrincipal;
+    color: @CorDoTexto;
+}
+
+h1{
+    font-family: @FonteTitulo;
+    font-size: 3em;
+}
+
+main{ //container da aplicação 
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; //centralizar horizontal
+    font-size: 2em;
+    text-align: center ;
+}
+
+button{
+    padding: 16px;
+    cursor: pointer; //dar impressão de clicável
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: @CorButton ;
+    color: @CorDoTextoButton;
+    font-family: @FontePrincipal;
+}
+
+input{
+    display: block; //colocando o input debaixo do label
+    margin: 16px auto 0; //auto no meio para ficar centralizado
+    font-size: 2em;
+    max-width: 120px;
+    border: none; //remover borda
+    background-color: transparent; //removendo o fundo
+    text-align: center;
+    color: #fff;
+    border-bottom: 6px solid #fff;
+}
+
+.resultado{
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+    display: none;
+
+    span{
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+    }
+}
